@@ -78,6 +78,7 @@ int main(int argc, char *const argv[])
 	/* install signal handlers */
 	signal(SIGHUP, signal_handler);
 	signal(SIGINT, signal_handler);
+	signal(SIGTERM, signal_handler);
 	signal(SIGQUIT, signal_handler);
 	signal(SIGALRM, signal_handler);
 
